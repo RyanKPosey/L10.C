@@ -21,6 +21,9 @@ class personType {
         uint16_t age_;
 
     public:
+    
+        // Constructor
+        personType(); // Default constructor
 
         void print() const;
         bool equals(const personType& other) const;

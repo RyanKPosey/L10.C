@@ -12,6 +12,14 @@
 
 using namespace std;
 
+personType::personType() { // Default constructor
+    first_name_ = "Not Set";
+    last_name_ = "Not Set";
+    address_ = "Not Set";
+    height_inches_ = 0.0;
+    date_of_birth_ = "Not Set";
+}
+
 bool compareStringCaseInsensitive(string string1, string string2) { // Stretch 3 (Case Insensitive Comparison)
     if (string1.size() != string2.size()) { // string1 and string2 aren't the same size
         return false;
