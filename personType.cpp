@@ -60,13 +60,13 @@ class personType {
 
         // Getters
 
-        string getFirstName();
-        string getLastName();
-        string getAddress();
-        double getHeight();
-        string getDOB();
-        char getGender();
-        uint8_t getAge();
+        string getFirstName() const;
+        string getLastName() const;
+        string getAddress() const;
+        double getHeight() const;
+        string getDOB() const;
+        char getGender() const;
+        uint8_t getAge() const;
 };
 
 void personType::print() const { // Stretch 2 (Formatted output)
