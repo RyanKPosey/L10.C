@@ -23,7 +23,12 @@ class personType {
     public:
     
         // Constructor
-        
+
+        personType(
+            string firstName, string lastName, string address, 
+            double height, string DOB, char gender, uint16_t age
+        ); // Full constructor
+
         personType(string firstName, string lastName); // First+Last constructor
 
         personType(); // Default constructor

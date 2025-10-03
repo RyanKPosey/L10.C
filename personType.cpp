@@ -12,6 +12,18 @@
 
 using namespace std;
 
+personType::personType( // Full constructor
+    string firstName, string lastName, string address, 
+    double height, string DOB, char gender, uint16_t age
+) {
+    first_name_ = firstName;
+    last_name_ = lastName;
+    address_ = address;
+    height_inches_ = height;
+    date_of_birth_ = DOB;
+    gender_ = gender;
+    age_ = age;
+}
 
 
 personType::personType(string firstName, string lastName) { // First+Last constructor
