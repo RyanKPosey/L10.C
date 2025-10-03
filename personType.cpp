@@ -65,7 +65,7 @@ bool compareStringCaseInsensitive(string string1, string string2) { // Stretch 3
 }
 
 void personType::print() const { // Stretch 2 (Formatted output)
-    std::cout <<  left << setw(20) << " | Name: " << left << this->getFirstName() << " " << this->getLastName() << endl
+    std::cout <<  left << setw(20) << " | Name: " << left << this->getName() << endl
         << left << setw(20) << " | Address: " << left << this->getAddress() << endl
         << left << setw(20) << " | Height: " << left << std::fixed << std::setprecision(1) << this->getHeight() << " in" << endl
         << left << setw(20) << " | DOB: " << left << this->getDOB() << endl
@@ -75,11 +75,7 @@ void personType::print() const { // Stretch 2 (Formatted output)
 
 bool personType::equals(const personType& other) const {
     // Circuited comparison
-    if (!compareStringCaseInsensitive(this->getFirstName(), other.getFirstName())) {
-        return false;
-    }
-
-    if (!compareStringCaseInsensitive(this->getLastName(), other.getLastName())) {
+    if (!compareStringCaseInsensitive(this->getName(), other.getName())) {
         return false;
     }
 
@@ -111,12 +107,8 @@ bool personType::equals(const personType& other) const {
 
     // Setters
 
-    void personType::setFirstName(string firstName) {
-        first_name_ = firstName;
-    }
-
-    void personType::setLastName(string lastName) {
-        last_name_ = lastName;
+    void personType::setName(string name) {
+        name_ = name;
     }
 
     void personType::setAddress(string address) {
@@ -149,8 +141,7 @@ bool personType::equals(const personType& other) const {
 
     // Getters
 
-    string personType::getFirstName() const { return first_name_; }
-    string personType::getLastName() const { return last_name_; }
+    string personType::getName() const { return name_; }
     string personType::getAddress() const { return address_; }
     double personType::getHeight() const { return height_inches_; }
     string personType::getDOB() const { return date_of_birth_; }

@@ -41,9 +41,7 @@ class personType {
 
         // Setters
 
-        void setFirstName(string firstName);
-
-        void setLastName(string lastName);
+        void setName(string name);
 
         void setAddress(string address);
 
@@ -57,8 +55,7 @@ class personType {
 
         // Getters
 
-        string getFirstName() const;
-        string getLastName() const;
+        string getName() const;
         string getAddress() const;
         double getHeight() const;
         string getDOB() const;
