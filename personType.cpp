@@ -119,4 +119,4 @@ bool personType::equals(const personType& other) const {
     double personType::getHeight() const { return height_inches_; }
     string personType::getDOB() const { return date_of_birth_; }
     char personType::getGender() const { return gender_; }
-    uint8_t personType::getAge() const { return age_; }
+    uint16_t personType::getAge() const { return age_; }
