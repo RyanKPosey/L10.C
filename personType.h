@@ -12,8 +12,7 @@
 using namespace std;
 
 class personType { 
-        std::string first_name_;
-        std::string last_name_;
+        std::string name_;
         std::string address_;
         double height_inches_{};
         std::string date_of_birth_;  

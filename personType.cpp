@@ -16,8 +16,7 @@ personType::personType( // Full constructor
     string firstName, string lastName, string address, 
     double height, string DOB, char gender, uint16_t age
 ) {
-    first_name_ = firstName;
-    last_name_ = lastName;
+    name = firstName + " " + lastName;
     address_ = address;
     height_inches_ = height;
     date_of_birth_ = DOB;
@@ -27,8 +26,7 @@ personType::personType( // Full constructor
 
 
 personType::personType(string firstName, string lastName) { // First+Last constructor
-    first_name_ = firstName;
-    last_name_ = lastName;
+    name = firstName + " " + lastName;
     address_ = "Not Set";
     height_inches_ = 0.0;
     date_of_birth_ = "Not Set";
@@ -37,8 +35,7 @@ personType::personType(string firstName, string lastName) { // First+Last constr
 }
 
 personType::personType() { // Default constructor
-    first_name_ = "Not Set";
-    last_name_ = "Not Set";
+    name = "Not Set";
     address_ = "Not Set";
     height_inches_ = 0.0;
     date_of_birth_ = "Not Set";
