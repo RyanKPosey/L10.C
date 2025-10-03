@@ -4,6 +4,7 @@
     Purpose: Practice using constructors
     Due date: 10/02/2025
 */
+#include <cstdint>
 
 #ifndef PERSON_TYPE_H
 #define PERSON_TYPE_H
@@ -48,7 +49,7 @@ class personType {
         double getHeight() const;
         string getDOB() const;
         char getGender() const;
-        uint8_t getAge() const;
+        uint16_t getAge() const;
 };
 
 #endif // PERSON_TYPE_H
