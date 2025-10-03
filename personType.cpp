@@ -32,6 +32,8 @@ personType::personType(string firstName, string lastName) { // First+Last constr
     address_ = "Not Set";
     height_inches_ = 0.0;
     date_of_birth_ = "Not Set";
+    gender_ = 'N';
+    age_ = 0;
 }
 
 personType::personType() { // Default constructor
@@ -40,6 +42,8 @@ personType::personType() { // Default constructor
     address_ = "Not Set";
     height_inches_ = 0.0;
     date_of_birth_ = "Not Set";
+    gender_ = 'N';
+    age_ = 0;
 }
 
 bool compareStringCaseInsensitive(string string1, string string2) { // Stretch 3 (Case Insensitive Comparison)
