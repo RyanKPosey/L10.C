@@ -1,8 +1,8 @@
 /*
     Programmer: Ryan Posey
-    Assignment: L10.B
-    Purpose: Practice using getters & setters
-    Due date: 9/30/2025
+    Assignment: L10.C
+    Purpose: Practice using constructors
+    Due date: 10/02/2025
 */
 
 #include <iostream>
