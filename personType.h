@@ -23,7 +23,11 @@ class personType {
     public:
     
         // Constructor
+        
+        personType(string firstName, string lastName); // First+Last constructor
+
         personType(); // Default constructor
+
 
         void print() const;
         bool equals(const personType& other) const;
