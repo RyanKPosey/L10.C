@@ -33,6 +33,9 @@ class personType {
 
         personType(); // Default constructor
 
+        // Destructor
+        
+        ~personType();
 
         void print() const;
         bool equals(const personType& other) const;
