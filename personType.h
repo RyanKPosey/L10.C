@@ -17,7 +17,7 @@ class personType {
         double height_inches_{};
         std::string date_of_birth_;  
         char gender_{}; 
-        uint8_t age_;
+        uint16_t age_;
 
     public:
 
